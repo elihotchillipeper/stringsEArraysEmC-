@@ -40,20 +40,46 @@ int array02(){
     return 0;
 }
 
+int array03(){
+
+    //Faça um programa que leia 4 números inteiros do usuário e os armazene em um array. Em seguida, solicite ao usuário que digite um número e substitua
+    //todas as ocorrências desse número no array pelo valor -1. Em seguida, imprima o array modificado.
 
 
+    int array[4], n;
 
+    cout << "Digite 4 número inteiros: ";
+    cin >> array[0] >> array[1] >> array[2] >> array[3];
 
+    cout << "Digite um número: ";
+    cin >> n;
 
+    if(n == array[0]){
+        array[0] = -1;
+        cout << array[0] << array [1] << array[2] << array[3];
+    } else if(n == array[1]){
+        array[1] = -1;
+        cout << array[0] << array [1] << array[2] << array[3];
+    }else if(n == array[2]){
+        array[2] = -1;
+        cout << array[0] << array [1] << array[2] << array[3];
+    }else if(n == array[3]){
+        array[3] = -1;
+        cout << array[0] << array [1] << array[2] << array[3];
+    } else {
+        cout << array[0] << array [1] << array[2] << array[3];
+    }
 
+    return 0;
+}
 
 
 
 
 int main(){
     //array01();
-    array02();
-    //array03();
+    //array02();
+    array03();
 
 
 
